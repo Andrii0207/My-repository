@@ -84,10 +84,10 @@ const users = [
 
 //////////////////
 
-const getFriends = users.flatMap(user => user.friends);
-console.log(getFriends);
-const uniqueFriends = getFriends.filter((friend, index, array) => array.indexOf(friend) === index);
-console.log(uniqueFriends);
+// const getFriends = users.flatMap(user => user.friends);
+// console.log(getFriends);
+// const uniqueFriends = getFriends.filter((friend, index, array) => array.indexOf(friend) === index);
+// console.log(uniqueFriends);
 
 ///////////////////////
 

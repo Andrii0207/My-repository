@@ -1,3 +1,78 @@
+// HW 01
+
+// Замовлення турів:
+// Пишемо реєстрацію користувача за допомогою prompt.  Окремо логін та пароль. Валідацію не потрібно робити.
+// Аналогічно пишемо логінізацію: запитуємо логін та пароль, порівнюємо їх з даними, які були введені при авторизації. Якщо все вірно - виводимо в консоль, що логін успішний. Якщо ні - знову запитуємо логін та пароль.
+// Запитуємо максимальну суму, яку готовий витратити користувач на тур.
+// Виводимо список усіх країн в alert, які доступні по сумі для користувача.
+// Вказуємо країну через prompt  і купляємо тур.
+// Виводимо повідомлення, що тур оплачений і залишок на рахунку користувача.
+// Дані, які вам знадобляться:
+
+const countries = ['Ukraine', 'Poland', 'Croatia', 'Montenegro', 'France', 'USA'];
+const countriesPrice = [100, 200, 300, 400, 500, 600];
+let userName = '';
+let userPass = '';
+let selectCountry = [];
+let selectPrice = [];
+
+///////////////////////////////
+
+// HW 02
+
+// "Delivery"
+// Ви пропонуєте користувачу список доступних ресторанів для замовлення їжі.
+// Користувач обирає конкретний ресторан і отримує список доступних пунктів в меню для замовлення із вказанням їх вартості.
+// Користувач обирає своє замовлення, після чого має отримати його підтвердження та основну інформацію: "що замовив, вартість та час доставки".
+const restaurants = [
+  {
+    order: [],
+    brand: "KFC",
+    menu: {
+        chicken: 50,
+        burger: 50,
+    },
+    deliveryTime: 60,
+  },
+  {
+    order: [],
+    brand: "mcDonalds",
+    menu: {
+        cola: 25,
+        burger: 30,
+      
+    },
+    deliveryTime: 30,
+  },
+  {
+    order: [],
+    brand: "Burger King",
+    menu: {
+        burgerXXL: 170,
+        burger: 70,
+    },
+    deliveryTime: 20,
+  },
+  
+];
+const services = {
+  showMenu() {},
+  getMenu() {},
+  addOrder() {},
+  confirmOrder() {},
+};
+
+const torpedaDelivery = {
+    order: [],
+    chosenRestaurant: "",
+  getAvailableRestaurants() {},
+  chooseRestaurant() {},
+  chooseDishes() {},
+};
+
+//////////////////////////////////
+
+
 // HW 03
 
 // Створіть клас Hamburger
@@ -17,33 +92,33 @@
 https://www.youtube.com/watch?v=FdJXDWD5r4w
 
 
-// const DB = {
-//   stuffing: {
-//     STUFFING_SALAD: {
-//       type: "STUFFING_SALAD",
-//       price: 300,
-//       ccal: 200,
-//     },
-//     STUFFING_POTATO: {
-//       type: "STUFFING_POTATO",
-//       price: 400,
-//       ccal: 100,
-//     },
-//     TOPPING_MAYO: {
-//       type: "TOPPING_MAYO",
-//       price: 300,
-//       ccal: 400,
-//     },
-//     TOPPING_SPICE: {
-//       type: "TOPPING_SPICE",
-//       price: 500,
-//       ccal: 700,
-//     },
-//   },
+const DB = {
+  stuffing: {
+    STUFFING_SALAD: {
+      type: "STUFFING_SALAD",
+      price: 300,
+      ccal: 200,
+    },
+    STUFFING_POTATO: {
+      type: "STUFFING_POTATO",
+      price: 400,
+      ccal: 100,
+    },
+    TOPPING_MAYO: {
+      type: "TOPPING_MAYO",
+      price: 300,
+      ccal: 400,
+    },
+    TOPPING_SPICE: {
+      type: "TOPPING_SPICE",
+      price: 500,
+      ccal: 700,
+    },
+  },
 
-//   sizes: {
-//     S: 200,
-//     L: 300,
-//     M: 400,
-//   },
-// };
+  sizes: {
+    S: 200,
+    L: 300,
+    M: 400,
+  },
+};

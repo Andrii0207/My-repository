@@ -169,8 +169,7 @@ function onClickLoadMore(response, step) {
 
 export default onClickLoadMore;
 
-// =================================================
-// 8. checkPhotoAmount
+// =================================================// 8. checkPhotoAmount
 
 import { loadMoreBtnEl } from './ref';
 
